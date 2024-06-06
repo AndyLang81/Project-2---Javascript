@@ -1,11 +1,11 @@
-/* Reset styles */
+/* Global reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Set base font and height for body and html */
+/* Base styles for body and html */
 body, html {
     height: 100%;
     font-family: Arial, sans-serif;
@@ -13,8 +13,8 @@ body, html {
 
 /* Header styles */
 header {
-    background-color: #333;
-    color: white;
+    background-color: #2ecc71; /* Neon green */
+    color: #ffffff; /* White */
     text-align: center;
     padding: 1rem 0;
     position: static;
@@ -23,8 +23,8 @@ header {
 
 /* Footer styles */
 footer {
-    background-color: #555;
-    color: white;
+    background-color: #ff6e40; /* Neon orange */
+    color: #ffffff; /* White */
     text-align: center;
     padding: 1rem 0;
     position: static;
@@ -38,58 +38,82 @@ main {
     height: calc(100vh - 140px);
 }
 
-/* Top div styles */
-.top-div {
-    background-color: #f1c40f;
+/* User info styles */
+.user-info {
+    background-color: #3498db; /* Neon blue */
     height: 20%;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around; /* Aligns the items evenly */
     align-items: center;
     padding: 1rem;
 }
 
 /* Score box and winner box styles */
-.score-box, .winner-box {
-    background-color: #fff;
-    color: #333;
+.score-box {
+    background-color: #ffcb05; /* Neon yellow */
+    color: #333333; /* Dark gray */
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
     width: 30%;
 }
 
-/* Game buttons styles */
-.game-buttons {
+/* Winner box styles */
+.winner-box {
+    background-color: #ffcb05; /* Neon yellow */
+    color: #333333; /* Dark gray */
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+    order: 2; /* Moves the winner box to the rightmost position */
+}
+
+/* Play selection styles */
+.play-selection {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     margin-top: 1rem;
 }
 
-.game-buttons button {
+/* Play boxes container */
+.play-selection .play-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Play box styles */
+.play-selection .play-box {
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    background-color: #3498db;
-    color: #fff;
+    background-color: #ff5733; /* Neon red */
+    color: #ffffff; /* White */
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin: 0.5rem; /* Add margin to create space between buttons */
 }
 
-.game-buttons button:hover {
-    background-color: #2980b9;
+/* Play box hover state */
+.play-selection .play-box:hover {
+    background-color: #ff4500; /* Neon orange */
 }
 
-/* Middle div styles */
-.middle-div {
+/* Content section styles */
+.content-section {
     display: flex;
     flex-grow: 1;
     height: 40%;
 }
 
-/* Cell styles */
-.cell {
+/* Content cell styles */
+.content-cell {
     flex: 1;
     padding: 1rem;
     display: flex;
@@ -97,12 +121,14 @@ main {
     align-items: center;
 }
 
-.cell:nth-child(odd) {
-    background-color: #e74c3c;
+/* Odd content cell background color */
+.content-cell:nth-child(odd) {
+    background-color: #ff5733; /* Neon red */
 }
 
-.cell:nth-child(even) {
-    background-color: #3498db;
+/* Even content cell background color */
+.content-cell:nth-child(even) {
+    background-color: #2ecc71; /* Neon green */
 }
 
 /* Content container styles */
@@ -114,7 +140,8 @@ main {
     height: 100%;
 }
 
+/* Content text styles */
 .content-container p {
     font-size: 2rem;
-    color: white;
+    color: #ffffff; /* White */
 }
