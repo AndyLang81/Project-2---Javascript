@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: static;
+    width: 100%;
+}
+
+footer {
+    background-color: #555;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: static;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 140px);
+}
+
+.top-div {
+    background-color: #f1c40f; 
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-div {
+    display: flex;
+    flex-grow: 1;
+    height: 40%;
+}
+
+.cell {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell:nth-child(odd) {
+    background-color: #e74c3c; 
+}
+
+.cell:nth-child(even) {
+    background-color: #3498db; 
+}
