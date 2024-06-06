@@ -7,19 +7,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header aria-label="Main Header">
         <h1>Header</h1>
     </header>
-    <main>
-        <div class="top-div">
-            <p>Top Div (20%)</p>
+    <main aria-label="Main Content">
+        <div class="top-div" aria-label="Top Section">
+            <div class="score-box" aria-label="User Score">
+                <p>User Score: 0</p>
+            </div>
+            <div class="winner-box" aria-label="Round Winner">
+                <p>Winner: None</p>
+            </div>
+            <div class="score-box" aria-label="Computer Score">
+                <p>Computer Score: 0</p>
+            </div>
         </div>
         <div class="middle-div">
-            <div class="cell">Cell 1</div>
-            <div class="cell">Cell 2</div>
+            <div class="cell" aria-label="Content Container 1">
+                <div class="content-container" aria-label="Text Content 1">
+                    <p>XXXXXXX</p>
+                </div>
+            </div>
+            <div class="cell" aria-label="Content Container 2">
+                <div class="content-container" aria-label="Text Content 2">
+                    <p>XXXXXXX</p>
+                </div>
+            </div>
         </div>
     </main>
-    <footer>
+    <footer aria-label="Main Footer">
         <p>Footer</p>
     </footer>
 </body>
