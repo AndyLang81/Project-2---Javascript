@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (result === "tie") {
             resultMessageDiv.textContent = "It's a tie!";
         } else {
-            const winner = result === userChoice ? "You" : "Computer";
+            const winner = result === userChoice ? "Player" : "Computer";
             resultMessageDiv.textContent = `${winner} wins!`;
         }
     }
