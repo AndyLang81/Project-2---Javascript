@@ -7,9 +7,8 @@ body {
 }
 
 .container {
-    border: 1px solid black;
     padding: 20px;
-    max-width: 600px;
+    max-width: 80%;
 }
 
 header, main, footer {
@@ -32,8 +31,23 @@ header, footer {
 .choices img {
     width: 10vw; 
     margin: 5px;
-    border: 1px solid black; 
-    border-radius: 5px; 
     cursor: pointer; 
     transition: transform 0.3s ease; 
+}
+
+.scores {
+    display: flex;
+    justify-content: center;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.score-box {
+    margin-bottom: 10px;
+    text-align: center;
 }
