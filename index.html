@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Lizard Spock</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header aria-label="Main Header">
@@ -12,35 +13,37 @@
     </header>
     <main aria-label="Main Content">
         <div class="user-info" aria-label="User Information">
-            <div class="score-box" aria-label="User Score">
+            <div id="user-score" class="score-box" aria-label="User Score">
                 <p>Your Madness Level: 0</p>
             </div>
-            <div class="winner-box" aria-label="Round Winner">
+            <div id="round-winner" class="winner-box" aria-label="Round Winner">
                 <p>Chaos Reigns: None</p>
             </div>
-            <div class="score-box" aria-label="Computer Score">
+            <div id="computer-score" class="score-box" aria-label="Computer Score">
                 <p>Computers's Madness Level: 0</p>
             </div>
-                    </div>
+        </div>
         <div class="play-selection" aria-label="Play Selection">
             <p>Summon Your Chaos</p>
             <div class="play-boxes">
-                <div class="play-box">Unleash Rock!</div>
-                <div class="play-box">Conjure Paper!</div>
-                <div class="play-box">Wield Scissors!</div>
-                <div class="play-box">Invoke Lizard!</div>
-                <div class="play-box">Summon Spock!</div>
+                <div class="play-box" data-choice="rock">Unleash Rock!</div>
+                <div class="play-box" data-choice="paper">Conjure Paper!</div>
+                <div class="play-box" data-choice="scissors">Wield Scissors!</div>
+                <div class="play-box" data-choice="lizard">Invoke Lizard!</div>
+                <div class="play-box" data-choice="spock">Summon Spock!</div>
             </div>
         </div>
         <div class="content-section">
             <div class="content-cell" aria-label="Content Container 1">
                 <div class="content-container" aria-label="Text Content 1">
                     <p>The Madness Awaits...</p>
+                    <img id="user-choice-img" src="" alt="User Choice">
                 </div>
             </div>
             <div class="content-cell" aria-label="Content Container 2">
                 <div class="content-container" aria-label="Text Content 2">
                     <p>Enter the Abyss...</p>
+                    <img id="computer-choice-img" src="" alt="Computer Choice">
                 </div>
             </div>
         </div>
