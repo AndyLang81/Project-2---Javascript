@@ -8,48 +8,31 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header aria-label="Main Header">
-        <h1>Welcome to the Insanity!</h1>
+    <header>
+        <h1>Rock Paper Scissors Lizard Spock</h1>
     </header>
-    <main aria-label="Main Content">
-        <div class="user-info" aria-label="User Information">
-            <div id="user-score" class="score-box" aria-label="User Score">
-                <p>Your Madness Level: 0</p>
-            </div>
-            <div id="round-winner" class="winner-box" aria-label="Round Winner">
-                <p>Chaos Reigns: None</p>
-            </div>
-            <div id="computer-score" class="score-box" aria-label="Computer Score">
-                <p>Computers's Madness Level: 0</p>
-            </div>
-        </div>
-        <div class="play-selection" aria-label="Play Selection">
-            <p>Summon Your Chaos</p>
-            <div class="play-boxes">
-                <div class="play-box" data-choice="rock">Unleash Rock!</div>
-                <div class="play-box" data-choice="paper">Conjure Paper!</div>
-                <div class="play-box" data-choice="scissors">Wield Scissors!</div>
-                <div class="play-box" data-choice="lizard">Invoke Lizard!</div>
-                <div class="play-box" data-choice="spock">Summon Spock!</div>
+    <main>
+        <div class="play-area">
+            <h2>Your Choice</h2>
+            <div class="choices">
+                <button class="choice" data-choice="rock">Rock</button>
+                <button class="choice" data-choice="paper">Paper</button>
+                <button class="choice" data-choice="scissors">Scissors</button>
+                <button class="choice" data-choice="lizard">Lizard</button>
+                <button class="choice" data-choice="spock">Spock</button>
             </div>
         </div>
-        <div class="content-section">
-            <div class="content-cell" aria-label="Content Container 1">
-                <div class="content-container" aria-label="Text Content 1">
-                    <p>The Madness Awaits...</p>
-                    <img id="user-choice-img" src="" alt="User Choice">
-                </div>
-            </div>
-            <div class="content-cell" aria-label="Content Container 2">
-                <div class="content-container" aria-label="Text Content 2">
-                    <p>Enter the Abyss...</p>
-                    <img id="computer-choice-img" src="" alt="Computer Choice">
-                </div>
-            </div>
+        <div class="result">
+            <h2>Result</h2>
+            <div id="result-message"></div>
+        </div>
+        <div class="computer-choice">
+            <h2>Computer's Choice</h2>
+            <div id="computer-choice"></div>
         </div>
     </main>
-    <footer aria-label="Main Footer">
-        <p>May the Madness Prevail!</p>
+    <footer>
+        <p>Rock Paper Scissors Lizard Spock</p>
     </footer>
 </body>
 </html>
