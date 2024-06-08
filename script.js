@@ -1,29 +1,34 @@
 document.addEventListener("DOMContentLoaded", function() {
     const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 
-    const buttons = document.querySelectorAll(".choice");
+    const buttons = document.querySelectorAll(".play-box");
     buttons.forEach(button => {
         button.addEventListener("click", function() {
             const userChoice = this.getAttribute("data-choice");
             const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+            displayUserChoice(userChoice);
             displayComputerChoice(computerChoice);
             displayResult(userChoice, computerChoice);
         });
     });
 
-    function displayComputerChoice(computerChoice) {
-        const computerChoiceDiv = document.getElementById("computer-choice");
-        computerChoiceDiv.textContent = computerChoice;
+    function displayUserChoice(userChoice) {
+        const userChoiceImg = document.getElementById("user-choice-img");
+        userChoiceImg.src = `images/${userChoice}.png`; 
     }
 
+    function displayComputerChoice(computerChoice) {
+        const computerChoiceImg = document.getElementById("computer-choice-img");
+        computerChoiceImg.src = `images/${computerChoice}.png`;
+
     function displayResult(userChoice, computerChoice) {
-        const resultMessageDiv = document.getElementById("result-message");
+        const resultMessageDiv = document.getElementById("round-winner");
         const result = determineWinner(userChoice, computerChoice);
         if (result === "tie") {
-            resultMessageDiv.textContent = "It's a tie!";
+            resultMessageDiv.textContent = "Chaos Reigns: It's a tie!";
         } else {
             const winner = result === userChoice ? "You" : "Computer";
-            resultMessageDiv.textContent = `${winner} wins!`;
+            resultMessageDiv.textContent = `Chaos Reigns: ${winner} wins!`;
         }
     }
 
