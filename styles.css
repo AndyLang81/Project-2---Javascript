@@ -1,3 +1,17 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center; /* Center-align content */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center; /* Center-align content */
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -11,13 +25,7 @@ body {
     max-width: 80%;
 }
 
-header, main, footer {
-    margin-bottom: 20px;
-}
 
-header, footer {
-    text-align: center;
-}
 
 .play-area .choices {
     display: flex;
