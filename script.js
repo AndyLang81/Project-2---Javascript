@@ -6,30 +6,24 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function() {
             const userChoice = this.getAttribute("data-choice");
             const computerChoice = choices[Math.floor(Math.random() * choices.length)];
-            displayUserChoice(userChoice);
             displayComputerChoice(computerChoice);
             displayResult(userChoice, computerChoice);
         });
     });
 
-    function displayUserChoice(userChoice) {
-        const userChoiceImg = document.getElementById("user-choice-img");
-        userChoiceImg.src = `images/${userChoice}.png`; // Assuming your images are stored in a folder named "images"
-    }
-
     function displayComputerChoice(computerChoice) {
-        const computerChoiceImg = document.getElementById("computer-choice-img");
-        computerChoiceImg.src = `images/${computerChoice}.png`; // Assuming your images are stored in a folder named "images"
+        const computerChoiceDiv = document.getElementById("computer-choice");
+        computerChoiceDiv.textContent = computerChoice;
     }
 
     function displayResult(userChoice, computerChoice) {
         const resultMessageDiv = document.getElementById("result-message");
         const result = determineWinner(userChoice, computerChoice);
         if (result === "tie") {
-            resultMessageDiv.textContent = "Chaos Reigns: It's a tie!";
+            resultMessageDiv.textContent = "It's a tie!";
         } else {
             const winner = result === userChoice ? "You" : "Computer";
-            resultMessageDiv.textContent = `Chaos Reigns: ${winner} wins!`;
+            resultMessageDiv.textContent = `${winner} wins!`;
         }
     }
 
