@@ -1,12 +1,28 @@
-.play-area {
-    width: 100%;
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.choices {
+header, main, footer {
+    border: 1px solid black;
+}
+
+header, footer {
+    text-align: center;
+}
+
+.play-area, .score-area, .result, .computer-choice {
+    margin: 20px;
+}
+
+.play-area .choices {
     display: flex;
     justify-content: space-around;
-    width: 80%;
+}
+
+.score-area, .result, .computer-choice {
+    text-align: center;
 }
