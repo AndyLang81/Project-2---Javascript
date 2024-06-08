@@ -1,21 +1,23 @@
-body, html {
-    height: 100%;
-    font-family: Arial, sans-serif;
+body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    border: 1px solid black;
+    padding: 20px;
+    max-width: 600px;
 }
 
 header, main, footer {
-    border: 1px solid black;
+    margin-bottom: 20px;
 }
 
 header, footer {
     text-align: center;
-}
-
-.play-area, .score-area, .result, .computer-choice {
-    margin: 20px;
 }
 
 .play-area .choices {
@@ -23,6 +25,15 @@ header, footer {
     justify-content: space-around;
 }
 
-.score-area, .result, .computer-choice {
+.result, .computer-choice {
     text-align: center;
+}
+
+.choices img {
+    width: 10vw; 
+    margin: 5px;
+    border: 1px solid black; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
 }

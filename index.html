@@ -8,30 +8,32 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Rock Paper Scissors Lizard Spock</h1>
-    </header>
-    <main>
-        <div class="play-area">
-            <div class="choices">
-                <button class="choice" data-choice="rock">Rock</button>
-                <button class="choice" data-choice="paper">Paper</button>
-                <button class="choice" data-choice="scissors">Scissors</button>
-                <button class="choice" data-choice="lizard">Lizard</button>
-                <button class="choice" data-choice="spock">Spock</button>
+    <div class="container">
+        <header>
+            <h1>Rock Paper Scissors Lizard Spock</h1>
+        </header>
+        <main>
+            <div class="play-area">
+                <div class="choices">
+                    <img class="choice" src="images/rock.png" alt="Rock" data-choice="rock">
+                    <img class="choice" src="images/paper.png" alt="Paper" data-choice="paper">
+                    <img class="choice" src="images/scissors.png" alt="Scissors" data-choice="scissors">
+                    <img class="choice" src="images/lizard.png" alt="Lizard" data-choice="lizard">
+                    <img class="choice" src="images/spock.png" alt="Spock" data-choice="spock">
+                </div>
             </div>
-        </div>
-        <div class="result">
-            <h2>Result</h2>
-            <div id="result-message"></div>
-        </div>
-        <div class="computer-choice">
-            <h2>Computer's Choice</h2>
-            <div id="computer-choice"></div>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Rock Paper Scissors Lizard Spock</p>
-    </footer>
+            <div class="result">
+                <h2>Result</h2>
+                <div id="result-message"></div>
+            </div>
+            <div class="computer-choice">
+                <h2>Computer's Choice</h2>
+                <div id="computer-choice"></div>
+            </div>
+        </main>
+        <footer>
+            <p>Rock Paper Scissors Lizard Spock Javascript project</p>
+        </footer>
+    </div>
 </body>
 </html>
