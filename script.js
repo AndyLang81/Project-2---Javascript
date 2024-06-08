@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 
-    const buttons = document.querySelectorAll(".play-box");
+    const buttons = document.querySelectorAll(".choice");
     buttons.forEach(button => {
         button.addEventListener("click", function() {
             const userChoice = this.getAttribute("data-choice");
@@ -14,15 +14,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function displayUserChoice(userChoice) {
         const userChoiceImg = document.getElementById("user-choice-img");
-        userChoiceImg.src = `images/${userChoice}.png`; 
+        userChoiceImg.src = `images/${userChoice}.png`; // Assuming your images are stored in a folder named "images"
     }
 
     function displayComputerChoice(computerChoice) {
         const computerChoiceImg = document.getElementById("computer-choice-img");
-        computerChoiceImg.src = `images/${computerChoice}.png`;
+        computerChoiceImg.src = `images/${computerChoice}.png`; // Assuming your images are stored in a folder named "images"
+    }
 
     function displayResult(userChoice, computerChoice) {
-        const resultMessageDiv = document.getElementById("round-winner");
+        const resultMessageDiv = document.getElementById("result-message");
         const result = determineWinner(userChoice, computerChoice);
         if (result === "tie") {
             resultMessageDiv.textContent = "Chaos Reigns: It's a tie!";
