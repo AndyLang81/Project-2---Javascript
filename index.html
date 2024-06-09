@@ -8,36 +8,36 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" role="main">
         
         <main>
             <div class="play-area">
-                <div class="choices">
-                    <img class="choice" src="images/rock.png" alt="Rock" data-choice="rock">
-                    <img class="choice" src="images/paper.png" alt="Paper" data-choice="paper">
-                    <img class="choice" src="images/scissors.png" alt="Scissors" data-choice="scissors">
-                    <img class="choice" src="images/lizard.png" alt="Lizard" data-choice="lizard">
-                    <img class="choice" src="images/spock.png" alt="Spock" data-choice="spock">
+                <div class="choices" aria-label="Game choices">
+                    <img class="choice" src="images/rock.png" alt="Rock" data-choice="rock" aria-label="Rock">
+                    <img class="choice" src="images/paper.png" alt="Paper" data-choice="paper" aria-label="Paper">
+                    <img class="choice" src="images/scissors.png" alt="Scissors" data-choice="scissors" aria-label="Scissors">
+                    <img class="choice" src="images/lizard.png" alt="Lizard" data-choice="lizard" aria-label="Lizard">
+                    <img class="choice" src="images/spock.png" alt="Spock" data-choice="spock" aria-label="Spock">
                 </div>
             </div>
             
             <div class="computer-choice">
-                <h2 class="neon-text small-neon-text" data-text="The computer selects:">The computer selects:</h2>
-                <div id="computer-choice" class="neon-text small-neon-text" data-text=""></div>
+                <h2 class="neon-text small-neon-text" data-text="The computer selects:" aria-label="The computer selects">The computer selects:</h2>
+                <div id="computer-choice" class="neon-text small-neon-text" data-text="" aria-live="polite"></div>
             </div>
             <div class="result">
-                <h2 class="neon-text small-neon-text" data-text="Result">Result</h2>
-                <div id="result-message" class="neon-text" data-text=""></div>
+                <h2 class="neon-text small-neon-text" data-text="Result" aria-label="Result">Result</h2>
+                <div id="result-message" class="neon-text" data-text="" aria-live="polite"></div>
             </div>
             <div class="scores">
                 <div class="score-container">
-                    <div id="user-score" class="score-box neon-text small-neon-text" data-text=""></div>
-                    <div class="neon-text small-neon-text" data-text="Player score">Player score</div>
+                    <div id="user-score" class="score-box neon-text small-neon-text" data-text="" aria-label="Player score"></div>
+                    <div class="neon-text small-neon-text" data-text="Player score" aria-label="Player score">Player score</div>
                 </div>
                 <div class="dash">-</div>
                 <div class="score-container">
-                    <div id="computer-score" class="score-box neon-text small-neon-text" data-text=""></div>
-                    <div class="neon-text small-neon-text" data-text="Computer score">Computer score</div>
+                    <div id="computer-score" class="score-box neon-text small-neon-text" data-text="" aria-label="Computer score"></div>
+                    <div class="neon-text small-neon-text" data-text="Computer score" aria-label="Computer score">Computer score</div>
                 </div>
             </div>
         </main>

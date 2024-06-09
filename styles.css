@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+/* main container */
 body {
     font-family: 'Roboto Mono', monospace;
     font-size: 24px;
@@ -8,6 +9,7 @@ body {
     background-color: #000015;
 }
 
+/* fixed header */
 header {
     position: fixed;
     top: 0;
@@ -15,6 +17,7 @@ header {
     text-align: center; 
 }
 
+/* fixed footer */
 footer {
     position: fixed;
     bottom: 0;
@@ -22,6 +25,7 @@ footer {
     text-align: center;
 }
 
+/* center content */
 body {
     display: flex;
     justify-content: center;
@@ -30,20 +34,24 @@ body {
     margin: 0;
 }
 
+/* main content container */
 .container {
     padding: 20px;
     max-width: 80%;
 }
 
+/* choices in the play area */
 .play-area .choices {
     display: flex;
     justify-content: space-around;
 }
 
+/* text alignment for result and computer choice */
 .result, .computer-choice {
     text-align: center;
 }
 
+/* styling for choice images */
 .choices img {
     width: 10vw; 
     margin: 5px;
@@ -51,27 +59,30 @@ body {
     transition: transform 0.3s ease; 
 }
 
+/* scores container */
 .scores {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px; /* Adjust spacing as needed */
+    margin-top: 20px; 
 }
 
+/* individual score container */
 .score-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 20px; /* Adjust spacing between score containers */
+    margin: 0 20px; 
 }
 
+/* styling for individual score */
 .score-box {
-    margin-top: 20px; /* Adjust spacing as needed */
+    margin-top: 20px; 
     margin-bottom: 10px;
     text-align: center;
 }
 
-/* Dash style */
+/* dash between scores */
 .dash {
     font-size: 3em;
     color: #fff;
@@ -83,10 +94,10 @@ body {
         0 0 80px #ff00ff60,
         0 0 120px #ff00ff40,
         0 0 160px #ff00ff20;
-    margin: 0 20px; /* Adjust spacing around the dash */
+    margin: 0 20px; 
 }
 
-/* Neon text effect */
+/* neon text effect */
 .neon-text {
     font-family: 'Roboto Mono', monospace;
     color: #fff;
@@ -102,6 +113,7 @@ body {
     position: relative;
 }
 
+/* neon text effect for specific elements */
 .neon-text::before {
     content: attr(data-text);
     position: absolute;
@@ -116,6 +128,7 @@ body {
     z-index: -1;
 }
 
+/* neon text effect for specific elements */
 .neon-text::after {
     content: attr(data-text);
     position: absolute;
@@ -130,7 +143,7 @@ body {
     z-index: -1;
 }
 
-/* Smaller neon text for specific elements */
+/* smaller neon text effect for specific elements */
 .small-neon-text {
     font-size: 1.5em;
 }
