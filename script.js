@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
             resultMessageDiv.textContent = "It's a tie!";
         } else {
             const winner = result === "user" ? "Player" : "Computer";
-            resultMessageDiv.textContent = `${winner} wins with ${userChoice} against ${computerChoice}!`;
+            resultMessageDiv.textContent = `${winner}'s ${userChoice} beats ${computerChoice}!`;
         }
     }
 
