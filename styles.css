@@ -54,20 +54,36 @@ body {
 .scores {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust spacing as needed */
 }
 
 .score-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 20px;
-    margin-bottom: 20px; 
+    margin: 0 20px; /* Adjust spacing between score containers */
 }
 
 .score-box {
-    margin-top: 80px;
+    margin-top: 20px; /* Adjust spacing as needed */
     margin-bottom: 10px;
     text-align: center;
+}
+
+/* Dash style */
+.dash {
+    font-size: 3em;
+    color: #fff;
+    text-shadow:
+        0 0 5px #f0f,
+        0 0 10px #f0f,
+        0 0 20px #f0f,
+        0 0 40px #ff00ff80,
+        0 0 80px #ff00ff60,
+        0 0 120px #ff00ff40,
+        0 0 160px #ff00ff20;
+    margin: 0 20px; /* Adjust spacing around the dash */
 }
 
 /* Neon text effect */

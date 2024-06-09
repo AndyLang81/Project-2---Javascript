@@ -26,11 +26,18 @@ document.addEventListener("DOMContentLoaded", function() {
         if (userChoice === computerChoice) {
             return "tie";
         }
-        if ((userChoice === "rock" && (computerChoice === "scissors" || computerChoice === "lizard")) ||
-            (userChoice === "paper" && (computerChoice === "rock" || computerChoice === "spock")) ||
-            (userChoice === "scissors" && (computerChoice === "paper" || computerChoice === "lizard")) ||
-            (userChoice === "lizard" && (computerChoice === "paper" || computerChoice === "spock")) ||
-            (userChoice === "spock" && (computerChoice === "rock" || computerChoice === "scissors"))) {
+
+        
+        const winningCombinations = {
+            "rock": ["scissors", "lizard"],
+            "paper": ["rock", "spock"],
+            "scissors": ["paper", "lizard"],
+            "lizard": ["paper", "spock"],
+            "spock": ["rock", "scissors"]
+        };
+
+        
+        if (winningCombinations[userChoice].includes(computerChoice)) {
             userScore++;
             return "user";
         } else {
@@ -50,9 +57,10 @@ document.addEventListener("DOMContentLoaded", function() {
         const resultMessageDiv = document.getElementById("result-message");
         if (result === "tie") {
             resultMessageDiv.textContent = "It's a tie!";
+        } else if (result === "user") {
+            resultMessageDiv.textContent = `Player's ${userChoice} beats Computer's ${computerChoice}!`;
         } else {
-            const winner = result === "user" ? "Player" : "Computer";
-            resultMessageDiv.textContent = `${winner}'s ${userChoice} beats ${computerChoice}!`;
+            resultMessageDiv.textContent = `Computer's ${computerChoice} beats Player's ${userChoice}!`;
         }
     }
 
