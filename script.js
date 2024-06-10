@@ -92,3 +92,15 @@ function initializeSelection(event) {
 }
 
 document.addEventListener("DOMContentLoaded", initializeGame);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.menu');
+
+    burger.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+        this.setAttribute('aria-expanded', !expanded);
+        menu.classList.toggle('active');
+        menu.setAttribute('aria-hidden', expanded);
+    });
+});

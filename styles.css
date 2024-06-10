@@ -56,7 +56,37 @@ body {
     width: 10vw; 
     margin: 5px;
     cursor: pointer; 
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff, 
+        0 0 15px #fff,
+        0 0 20px #ff00ff,
+        0 0 30px #ff00ff,
+        0 0 40px #ff00ff,
+        0 0 50px #ff00ff,
+        0 0 75px #ff00ff;
+}
+
+/* Neon glow for half of the text */
+.choices img::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    text-shadow:
+        0 0 5px #f0f,
+        0 0 10px #f0f,
+        0 0 20px #f0f,
+        0 0 40px #ff00ff80,
+        0 0 80px #ff00ff60,
+        0 0 120px #ff00ff40,
+        0 0 160px #ff00ff20;
+    z-index: -1;
 }
 
 /* scores container */
@@ -146,4 +176,60 @@ body {
 /* smaller neon text effect for specific elements */
 .small-neon-text {
     font-size: 1.5em;
+}
+
+/* Burger menu */
+.burger {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    transition: 0.4s;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px;
+    z-index: 5;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease;
+}
+
+.menu h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.menu p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.menu.active {
+    transform: translateY(0);
 }
