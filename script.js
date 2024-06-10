@@ -96,6 +96,7 @@ document.addEventListener("DOMContentLoaded", initializeGame);
 document.addEventListener("DOMContentLoaded", function() {
     const burger = document.querySelector('.burger');
     const menu = document.querySelector('.menu');
+    const closeRulePageBtn = document.querySelector('.close-rule-page');
 
     burger.addEventListener('click', function() {
         const expanded = this.getAttribute('aria-expanded') === 'true' || false;
@@ -103,4 +104,12 @@ document.addEventListener("DOMContentLoaded", function() {
         menu.classList.toggle('active');
         menu.setAttribute('aria-hidden', expanded);
     });
+
+    // add event listener for clicking on the rule expansion
+    closeRulePageBtn.addEventListener('click', function() {
+        menu.classList.remove('active'); // hide the rule menu
+        burger.setAttribute('aria-expanded', 'false'); // reset burger button state
+        menu.setAttribute('aria-hidden', 'true'); // set rule menu aria-hidden attribute
+    });
 });
+
