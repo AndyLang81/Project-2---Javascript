@@ -301,6 +301,5 @@ body {
   .choices img {
     width: 20vw;
     margin: 5px;
-    /* Adjust the margin to maintain consistent spacing */
-  }
+      }
 }
