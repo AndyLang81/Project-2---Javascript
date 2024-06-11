@@ -2,235 +2,305 @@
 
 /* main container */
 body {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-style: italic;
-    background-color: #000015;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+  background-color: #000015;
 }
 
 /* fixed header */
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    text-align: center; 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
 }
 
 /* fixed footer */
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 /* center content */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 /* main content container */
 .container {
-    padding: 20px;
-    max-width: 80%;
+  padding: 20px;
+  max-width: 80%;
 }
 
 /* choices in the play area */
 .play-area .choices {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* text alignment for result and computer choice */
-.result, .computer-choice {
-    text-align: center;
+.result,
+.computer-choice {
+  text-align: center;
 }
 
 /* styling for choice images */
 .choices img {
-    width: 10vw; 
-    margin: 5px;
-    cursor: pointer; 
-    transition: transform 0.3s ease;
-    border: 2px solid transparent;
-    box-shadow: 
-        0 0 5px #fff,
-        0 0 10px #fff, 
-        0 0 15px #fff,
-        0 0 20px #ff00ff,
-        0 0 30px #ff00ff,
-        0 0 40px #ff00ff,
-        0 0 50px #ff00ff,
-        0 0 75px #ff00ff;
+  width: 10vw;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  border: 2px solid transparent;
+  box-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #fff,
+    0 0 20px #ff00ff,
+    0 0 30px #ff00ff,
+    0 0 40px #ff00ff,
+    0 0 50px #ff00ff,
+    0 0 75px #ff00ff;
 }
 
 /* Neon glow for half of the text */
 .choices img::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    color: #fff;
-    text-shadow:
-        0 0 5px #f0f,
-        0 0 10px #f0f,
-        0 0 20px #f0f,
-        0 0 40px #ff00ff80,
-        0 0 80px #ff00ff60,
-        0 0 120px #ff00ff40,
-        0 0 160px #ff00ff20;
-    z-index: -1;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  color: #fff;
+  text-shadow:
+    0 0 5px #f0f,
+    0 0 10px #f0f,
+    0 0 20px #f0f,
+    0 0 40px #ff00ff80,
+    0 0 80px #ff00ff60,
+    0 0 120px #ff00ff40,
+    0 0 160px #ff00ff20;
+  z-index: -1;
 }
 
 /* scores container */
 .scores {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 /* individual score container */
 .score-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
 }
 
 /* styling for individual score */
 .score-box {
-    margin-top: 20px; 
-    margin-bottom: 10px;
-    text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 /* dash between scores */
 .dash {
-    font-size: 3em;
-    color: #fff;
-    text-shadow:
-        0 0 5px #f0f,
-        0 0 10px #f0f,
-        0 0 20px #f0f,
-        0 0 40px #ff00ff80,
-        0 0 80px #ff00ff60,
-        0 0 120px #ff00ff40,
-        0 0 160px #ff00ff20;
-    margin: 0 20px; 
+  font-size: 3em;
+  color: #fff;
+  text-shadow:
+    0 0 5px #f0f,
+    0 0 10px #f0f,
+    0 0 20px #f0f,
+    0 0 40px #ff00ff80,
+    0 0 80px #ff00ff60,
+    0 0 120px #ff00ff40,
+    0 0 160px #ff00ff20;
+  margin: 0 20px;
 }
 
 /* neon text effect */
 .neon-text {
-    font-family: 'Roboto Mono', monospace;
-    color: #fff;
-    text-transform: uppercase;
-    text-shadow:
-        0 0 5px #f0f,
-        0 0 10px #f0f,
-        0 0 20px #f0f,
-        0 0 40px #ff00ff80,
-        0 0 80px #ff00ff60,
-        0 0 120px #ff00ff40,
-        0 0 160px #ff00ff20;
-    position: relative;
+  font-family: 'Roboto Mono', monospace;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 5px #f0f,
+    0 0 10px #f0f,
+    0 0 20px #f0f,
+    0 0 40px #ff00ff80,
+    0 0 80px #ff00ff60,
+    0 0 120px #ff00ff40,
+    0 0 160px #ff00ff20;
+  position: relative;
 }
 
 /* neon text effect for specific elements */
 .neon-text::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: #ff00ff;
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
-    opacity: 0.5;
-    filter: blur(10px);
-    z-index: -1;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ff00ff;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  opacity: 0.5;
+  filter: blur(10px);
+  z-index: -1;
 }
 
 /* neon text effect for specific elements */
 .neon-text::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: #ff00ff;
-    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
-    opacity: 0.5;
-    filter: blur(10px);
-    z-index: -1;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ff00ff;
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+  opacity: 0.5;
+  filter: blur(10px);
+  z-index: -1;
 }
 
 /* smaller neon text effect for specific elements */
 .small-neon-text {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 /* Burger menu */
 .burger {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    z-index: 10;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
 }
 
 .bar {
-    width: 30px;
-    height: 3px;
-    background: #fff;
-    transition: 0.4s;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  transition: 0.4s;
 }
 
 .menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: #fff;
-    padding: 20px;
-    z-index: 5;
-    transform: translateY(-100%);
-    transition: transform 0.4s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  margin-right: 20px; 
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding: 20px;
+  z-index: 5;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease;
 }
 
+
 .menu h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 
 .menu p {
-    font-size: 1em;
-    line-height: 1.6;
+  font-size: 1em;
+  line-height: 1.6;
 }
 
 .menu.active {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
+/* baseline for full screen PC and tablets over 999px */
+@media (min-width: 1000px) {
+  body {
+    font-size: 24px;
+  }
+
+  .small-neon-text {
+    font-size: 1.5em;
+  }
+
+  .neon-text {
+    font-size: 2em;
+  }
+
+  .choices img {
+    width: 12vw;
+  }
+}
+
+/* for screens between 600px and 999px, scale down to 75% */
+@media (max-width: 999px) and (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+  .small-neon-text {
+    font-size: 1.125em;
+  }
+
+  .neon-text {
+    font-size: 1.5em;
+  }
+
+  .choices img {
+    width: 12vw;
+  }
+}
+
+/* for screens below 600px, scale down to 50% */
+@media (max-width: 599px) {
+  body {
+    font-size: 12px;
+  }
+
+  .small-neon-text {
+    font-size: 0.75em;
+  }
+
+  .neon-text {
+    font-size: 1em;
+  }
+
+  .choices img {
+    width: 12vw;
+  }
+
+  .choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .choices img {
+    width: 20vw;
+    margin: 5px;
+    /* Adjust the margin to maintain consistent spacing */
+  }
+}
