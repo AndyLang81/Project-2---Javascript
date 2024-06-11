@@ -7,6 +7,11 @@ body {
   text-transform: uppercase;
   font-style: italic;
   background-color: #000015;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 /* fixed header */
@@ -25,14 +30,6 @@ footer {
   text-align: center;
 }
 
-/* center content */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
 
 /* main content container */
 .container {
@@ -44,7 +41,13 @@ body {
 .play-area .choices {
   display: flex;
   justify-content: space-around;
+
 }
+
+.result-message {
+  max-width: 80%;
+}
+
 
 /* text alignment for result and computer choice */
 .result,
