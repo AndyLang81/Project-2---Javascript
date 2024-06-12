@@ -1,14 +1,12 @@
 # Rock Paper Scissors Lizard Spock
 
-[Link to live project]
+[\[Link to live project\]](https://github.com/AndyLang81/Project-2---Javascript)
 
 ## Description
 
 Rock Paper Scissors Lizard Spock is a web-based game inspired by the popular game featured in the TV show "The Big Bang Theory". It offers an exciting twist on the classic Rock Paper Scissors game by introducing two additional options: Lizard and Spock. The game is designed to be simple yet engaging, providing hours of fun for players of all ages.
 
-## Features
-
-### Game Mechanics
+## Game mechanics
 
 #### Choices
 Players can choose from five options: rock, paper, scissors, lizard, or spock.
@@ -20,22 +18,49 @@ Each choice has specific combinations it can defeat. For example, rock crushes s
 When a player wins a round by selecting a choice that defeats the opponent's choice, their score increases. Conversely, if the opponent wins, their score increases.
 
 #### Victory Condition
-The game continues until one player reaches the winning score, typically set at 10 points.
+The game continues until one player reaches the winning score, set at 10 points.
 
 #### Display and Interaction
 The game interface allows players to make selections through clickable buttons and displays the computer's choice. After each round, the outcome is displayed, and scores are updated accordingly.
 
-### Neon Glow Effect
-ADD 
 
-### Burger Menu
-ADD 
 
-### Rules Page
-ADD 
+## User stories
 
-### Responsive Design
-ADD 
+When the user opens the site, they will see the five different pictures representing player choices to start the game. 
+
+![alt text](assets/images/readme-images/user-selection.png)
+
+Upon selecting one, user will play their hand and the computer will select an input at random.
+
+After selection, the system will inform the user of the computer's choice.
+
+![alt text](assets/images/readme-images/computer-selects.png)
+
+At the same time, the user will be informed of how their choice interacts with the computer's choice. 
+
+![alt text](assets/images/readme-images/computer-selects-non-tie.png)
+In the event that the computer makes the same selection as the user, the game will result in a tie. 
+
+![alt text](assets/images/readme-images/result-message.png)
+
+Once a winner has been selected, user will see a point added to the scoreboard of the most recent round winner. 
+
+![alt text](assets/images/readme-images/score-board.png)
+
+Once the user or the computer will reach 10 wins, the game ends, and a message is displayed in the browser, announcing the winnner.
+
+![alt text](assets/images/readme-images/winner-announcement.png)
+
+## Technology:
+
+The project is built in HTML, CSS and Javascript
+
+## Neon Glow Effect
+Neon effect tutorial adapted from https://www.w3schools.com/
+
+## Burger Menu
+Burger menu repurposed from the Love Running project
 
 ## Future Implementations
 
@@ -51,7 +76,8 @@ The web app has been thoroughly tested across various screen sizes using media q
 
 - **PC Screens**: The web app was tested on desktop monitors with various resolutions to ensure optimal layout and functionality across widescreen displays.
   
-- **Tablet Screens**: Testing was performed on tablet devices, including both landscape and portrait orientations, to verify responsiveness and usability on devices with medium-sized screens.
+- **Tablet Screens**: Testing was performed on tablet devices
+to verify responsiveness and usability on devices with medium-sized screens.
 
 - **Mobile Screens**: Extensive testing was carried out on smartphones of different makes and models to ensure that the web app is fully functional and visually appealing on small screens. Attention was given to touch interactions, readability, and navigation on mobile devices.
 
@@ -61,13 +87,18 @@ The responsive design of the web app allows it to adapt seamlessly to different 
 
 The web app is deployed using [GitHub Pages](https://pages.github.com/), making it accessible to users via a public URL. Continuous deployment practices ensure that any updates or changes made to the codebase are automatically reflected in the live version of the app.
 
+## validation
+W3C CSS validator : [results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fandylang81.github.io%2FProject-2---Javascript%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+W3C HTML validator : [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fandylang81.github.io%2FProject-2---Javascript%2F)
+
+Javascript passes throug JShint.com without major issues.
+
 ## Credits
-
-### Code
-
+Thanks to my mentor, Rohit, for good guidance.
 
 ### Content
-ADD 
+Game descriptions and text generated with ChatGPT.
 
 ### Media Sources
 
