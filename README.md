@@ -6,7 +6,7 @@
 
 Rock Paper Scissors Lizard Spock is a web-based game inspired by the popular game featured in the TV show "The Big Bang Theory". It offers an exciting twist on the classic Rock Paper Scissors game by introducing two additional options: Lizard and Spock. The game is designed to be simple yet engaging, providing hours of fun for players of all ages.
 
-## Game mechanics
+## Features & Game mechanics
 
 #### Choices
 Players can choose from five options: rock, paper, scissors, lizard, or spock.
@@ -22,8 +22,6 @@ The game continues until one player reaches the winning score, set at 10 points.
 
 #### Display and Interaction
 The game interface allows players to make selections through clickable buttons and displays the computer's choice. After each round, the outcome is displayed, and scores are updated accordingly.
-
-
 
 ## User stories
 
@@ -54,7 +52,41 @@ Once the user or the computer will reach 10 wins, the game ends, and a message i
 
 ## Technology:
 
-The project is built in HTML, CSS and Javascript
+The project structure is built in HTML using Gitpod.
+Visuals are built in CSS Gitpod.
+Game logic is built in Javascript Gitpod.
+The site is deployed via Github.
+
+## Deployment
+
+The site is deployed with GitHub.
+
+The link to the repository can be found [here](https://andylang81.github.io/Project-2---Javascript/)
+
+The live page can be found by going to the top bar and selecting Settings > Pages > GitHub Pages.
+
+Steps to deploy: Upon opening the dashboard, user should see their active repositories on the profile.
+
+![alt text](assets/images/readme-images/repositories.png)
+
+Upon selecting the repository in question (Project-2---Javascript), user should see the bar with general options in the top portion of the screen. 
+
+![alt text](assets/images/readme-images/optionsbar.png)
+
+User should click on "Settings" which opens the General page with a column of options on the left hand side.
+
+![alt text](assets/images/readme-images/general-column.png)
+
+Here, user should click on "Pages", which will open the page "GitHub Pages" and find the section in the main screen labelled "Build and deployment."
+
+![alt text](assets/images/readme-images/branchdeploy.png)
+
+After ensuring main and /root are selected and clicking "Save" user will see their deployed pages in the section above labelled "GitHub Pages."
+
+![alt text](assets/images/readme-images/livepages.png)
+
+Clicking the link in the box will lead the user to the live site.
+
 
 ## Neon Glow Effect
 Neon effect tutorial adapted from https://www.w3schools.com/
